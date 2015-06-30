@@ -1,0 +1,17 @@
+
+# Ambiente:
+apache2
+php5
+php5-mysql
+mysql-server
+
+# Conectar ao banco:
+mysql -uroot -p 
+
+# Criação de banco e permissões:
+CREATE USER 'eadsie'@'localhost' IDENTIFIED BY 'eadsie';
+CREATE DATABASE db_eadsie;
+GRANT ALL PRIVILEGES ON db_eadsie.* TO 'eadsie'@'localhost';
+FLUSH PRIVILEGES;
+
+
