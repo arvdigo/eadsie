@@ -1,4 +1,7 @@
 
+# Download do projeto:
+https://github.com/arvdigo/eadsie.git
+
 # Ambiente:
 apache2
 php5
@@ -13,5 +16,7 @@ CREATE USER 'eadsie'@'localhost' IDENTIFIED BY 'eadsie';
 CREATE DATABASE db_eadsie;
 GRANT ALL PRIVILEGES ON db_eadsie.* TO 'eadsie'@'localhost';
 FLUSH PRIVILEGES;
+
+mysql -uroot -p db_eadsie < dump.sql
 
 
