@@ -308,7 +308,25 @@ if (count($objinscrito) == 0) {
 					<input style="text-transform:uppercase" name="vaga_rural" id="vaga_rural" disabled="disabled" tabindex=30 size="3" value="<?php echo ($objinscrito[0]->getvagarural()); ?>" />
 				</td>
 			</tr>
-
+                        <tr>
+				<td align='right'><label for=etnia>Etnia:</label></td>
+				<td>
+					<input style="text-transform:uppercase" name="etnia" id="etnia" disabled="true" type="text" size="65" maxlength="65" tabindex=21 alt="Etnia" value="<?php echo ($objinscrito[0]->getetnia()); ?>"/>
+				</td>
+			</tr>
+                        <tr>
+				<td align='right'><label for=renda>Renda:</label></td>
+				<td>
+                                    <?php
+                                        if($objinscrito[0]->getrenda() == 1) {
+                                            $renda = "Igual ou inferior a 1.5 salario-mínimo";
+                                        } else {
+                                            $renda = "Superior a 1.5 salario-mínimo";
+                                        }
+                                    ?>
+					<input style="text-transform:uppercase" name="renda" id="renda" disabled="true" type="text" size="65" maxlength="65" tabindex=21 alt="Renda" value="<?php echo($renda); ?>"/>
+				</td>
+			</tr>
 			<tr>
 					<td colspan="2" align="center"><h2> Registro de notas </h2> </td>
 			</tr> 

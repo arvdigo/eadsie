@@ -57,6 +57,8 @@ $mediapor3=null;
 $mediamat1=null;
 $mediamat2=null;
 $mediamat3=null;
+$idetnia = null;
+$renda = null;
 
 
 foreach ($_POST as $key => $valor) {
@@ -120,6 +122,9 @@ $inscrito->setultimaalteracao($ultima_alteracao);
 $inscrito->setcurso($curso);
 $inscrito->setnis($nis);
 $inscrito->setnota($nota);
+
+$inscrito->setetnia($etnia);
+$inscrito->setrenda($renda);
 
 //implementação para atender ao processo seletivo de discente EAD
 $inscrito->setmediapor1($mediapor1);

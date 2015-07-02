@@ -817,7 +817,37 @@
 						<span class="textoSobrescrito">*</span>
 					</td>
 				</tr>                
+                                <tr>
+                                        <td align="right" height="28"><label for="etnia">Informe sua Etnia:</label></td>
+                                        <td>
+                                            <select name="etnia" id="etnia" >
+                                                <option value="" selected="selected"></option>
+                                                <option value="PRETO">PRETO</option>
+                                                <option value="PARDO">PARDO</option>
+                                                <option value="INDIGENA">INDIGENA</option>
+                                                <option value="OUTRA">OUTRA ETNIA</option>
+                                            </select>
+                                            <input name="flag_etnia" id="flag_vaga_etnia" type="hidden">
+                                            <span class="textoSobrescrito">**</span>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" height="28"><label for="renda">Qual a renda total de sua família (soma aproximada dos rendimentos de todos que residem na sua casa)?</label></td>
+                                    <td>
+                                        <select name="renda" id="renda" >
+                                            <option value="" selected="selected"></option>
+                                            <option value="1">Igual ou inferior a 1,5 salario-mínimo (R$ xxx)</option>
+                                            <option value="2">Superior a 1,5 salario-mínimo (R$ xxx)</option>
+                                        </select>
+                                        <input name="flag_renda" id="flag_vaga_renda" type="hidden">
+                                        <span class="textoSobrescrito">
+                                            **<br>
+                                            <b>1</b> - Renda familiar per capita igual ou inferior a 1,5 salário-mínimo (um salário-mínimo e meio) ou R$ 933,00.<br>
+                                            <b>2</b> - Renda familiar per capita superior a 1,5 salário-mínimo (um salário-mínimo e meio).<br>
 
+                                        </span>
+                                    </td>
+                                </tr>
 				<tr>
 							<td colspan="2" align="center"><h2> Registro de notas </h2> </td>
 				</tr>                
